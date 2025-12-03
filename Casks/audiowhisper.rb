@@ -15,8 +15,13 @@ cask "audiowhisper" do
   app "AudioWhisper.app"
 
   zap trash: [
+    # App preferences and caches
     "~/Library/Preferences/com.audiowhisper.app.plist",
     "~/Library/Application Support/AudioWhisper",
     "~/Library/Caches/com.audiowhisper.app",
+    # WhisperKit models (CoreML)
+    "~/Documents/huggingface/models/argmaxinc/whisperkit-coreml",
+    # MLX/Hugging Face models (Parakeet, Llama, Qwen, etc.) - WARNING: shared with other apps
+    # "~/.cache/huggingface/hub",
   ]
 end

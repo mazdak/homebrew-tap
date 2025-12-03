@@ -21,7 +21,10 @@ cask "audiowhisper" do
     "~/Library/Caches/com.audiowhisper.app",
     # WhisperKit models (CoreML)
     "~/Documents/huggingface/models/argmaxinc/whisperkit-coreml",
-    # MLX/Hugging Face models (Parakeet, Llama, Qwen, etc.) - WARNING: shared with other apps
-    # "~/.cache/huggingface/hub",
+    # MLX models - Parakeet (speech-to-text)
+    "~/.cache/huggingface/hub/models--mlx-community--parakeet-*",
+    # MLX models - LLMs used for semantic correction
+    "~/.cache/huggingface/hub/models--mlx-community--Llama-*",
+    "~/.cache/huggingface/hub/models--mlx-community--Qwen*",
   ]
 end

@@ -1,6 +1,6 @@
 cask "audiowhisper" do
-  version "2.0.0"
-  sha256 "a1ec1443b70d5ef4c47f1c36c905515dfae4606e20e150a493e2ad6f4ad7d1ec"
+  version "2.1.0"
+  sha256 "79d578f7e953318ad14d8a098cbe87a142c8d21d76553466eb91a7ae15579a3f"
 
   url "https://github.com/mazdak/AudioWhisper/releases/download/v#{version}/AudioWhisper.zip"
   name "AudioWhisper"

@@ -16,6 +16,18 @@ brew install audiowhisper
 
 ---
 
+### 🤖 Codex (Formula)
+OpenAI Codex CLI with a terminal UI for agentic coding.
+
+**Install:**
+```bash
+brew install codex
+```
+
+**Repository:** [mazdak/codex](https://github.com/mazdak/codex)
+
+---
+
 ### 🔧 LazyRedis (Formula)
 A fast and lazy Terminal UI for inspecting and manipulating Redis databases.
 
@@ -42,11 +54,14 @@ Then install any package:
 # Install AudioWhisper
 brew install audiowhisper
 
+# Install Codex
+brew install codex
+
 # Install LazyRedis
 brew install lazyredis
 
 # Or install both
-brew install audiowhisper lazyredis
+brew install audiowhisper codex lazyredis
 ```
 
 ## Updating
@@ -57,6 +72,7 @@ brew update && brew upgrade
 
 # Update specific package
 brew upgrade audiowhisper
+brew upgrade codex
 brew upgrade lazyredis
 ```
 
@@ -65,6 +81,7 @@ brew upgrade lazyredis
 ```bash
 # Uninstall a package
 brew uninstall audiowhisper
+brew uninstall codex
 brew uninstall lazyredis
 
 # Remove the tap (optional)
@@ -76,6 +93,7 @@ brew untap mazdak/tap
 ```
 homebrew-tap/
 ├── Formula/          # CLI tools and libraries
+│   ├── codex.rb
 │   └── lazyredis.rb
 └── Casks/           # GUI applications
     └── audiowhisper.rb
